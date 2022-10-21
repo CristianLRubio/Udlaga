@@ -1,9 +1,9 @@
-
 from sky import Sky
 import pygame
 import random
 
 class Game:
+
     def __init__(self):
         
         self.width=400
@@ -34,7 +34,7 @@ class Game:
                 r=random.randint(0,255)
                 g=random.randint(0,255)
                 b=random.randint(0,255)
-                pygame.self.Spritesdraw.circle(self.screen,(r,g,b), start, 1)
+                pygame.draw.circle(self.screen,(r,g,b), start, 1)
             self.mySky.move()
             x=self.width/2
             y=self.height/2
@@ -42,6 +42,6 @@ class Game:
             pygame.display.flip()
             self.clock.tick(self.fps)
             
-myGame= Game()
+myGame=Game()
 myGame.run()        
     
